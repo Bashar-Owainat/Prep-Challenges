@@ -38,7 +38,7 @@ const sumNums = (arr)=>{
     let sum = 0;
     // write your code here
     for(let i = 0; i < arr.length; i++){
-        if(typeof(arr[i]) === "number"){
+        if(arr[i] /1 === arr[i]){
             sum += arr[i];
         }
     }
@@ -59,8 +59,10 @@ const sumNums = (arr)=>{
 const reverseArray = (arr)=>{
     // write your code here
     let reversedArr =[];
+    let counter = 0;
     for (let i = arr.length-1 ; i >=0 ; i--) {
-        reversedArr[i] = arr.shift();
+        reversedArr[counter] = arr[i];
+        counter++; 
         
     }
     return reversedArr;
