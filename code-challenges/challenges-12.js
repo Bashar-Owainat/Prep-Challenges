@@ -111,10 +111,9 @@ const cvsFiltration = (arr) => {
 
 const vowelsFiltration = (arr) => {
     // write your code here
-    // let result = arr.filter(e =>{
-    //     e.includes("a") == false && e.includes("e") == false && e.includes("i") == false && e.includes("o") == false && e.includes("u") ;
-    // })
-    return result;
+    let rex = /[aeiou]/i;
+    let result = arr.filter(e => rex.test(e) == false);
+       return result;
 } 
 // -------------------------------------------------------------------------------------------------------
 
